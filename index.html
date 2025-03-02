@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A simple online calculator">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <h3>Simple Calculator - Version 1.2(03.2025)</h3>
+  <input id="display" type="text" placeholder="0">
+  <div class="btns">
+    <button onclick="del()" id="C">C</button>
+    <button id="one" onclick="addOne()">1</button>
+    <button onclick="addTwo()" id="two">2</button>
+    <button onclick="addThree()" id="three">3</button>
+    <button onclick="addPlus()" id="plus">+</button>
+    <button onclick="addFour()" id="four">4</button>
+    <button onclick="addFive()" id="five">5</button>
+    <button onclick="addSix()" id="six">6</button>
+    <button onclick="addMinus()" id="minus">-</button>
+    <button onclick="addSeven()" id="seven">7</button>
+    <button onclick="addEight()" id="eighth">8</button>
+    <button onclick="addNine()" id="nine">9</button>
+    <button onclick="addMno()" id="mno">*</button>
+    <button onclick="addDil()" id="dil">/</button>
+    <button onclick="addZero()" class="zero">0</button>
+    <button onclick="addT()" id="T">(</button>
+    <button onclick="addO()" id="O">)</button>
+    <button onclick="addDot()" id="dot">.</button>
+    <button onclick="addPi()" id="pi">π</button>
+  </div>
+  
+  <div style="" class="addon">
+    <p>Algebra addon</p>
+    <button onclick="addKor2()" id="kor2">√</button>
+    <button onclick="addKor3()" id="kor3">∛</button>
+    <button onclick="addKv()" id="kv">x^2</button>
+    <button onclick="addKub()" id="kub">x^3</button>
+    <button onclick="addKvM()" id="kvM">x^y</button>
+    <button onclick="addKvMi()" id="kvMi">1/x</button>
+  </div>
+  
+  <div class="geometry">
+    
+    <p>Geometry addon</p>
+
+    <button onclick="addSin()" id="sin">sin</button>
+    <button onclick="addCos()" id="cos">cos</button>
+    <button onclick="addTan()" id="tan">tan</button>
+    <button onclick="addCot()" id="cot">cot</button>
+  </div>
+  
+<button onclick="calcul()" class="cal">Calculate</button>  
+  
+  
+  
+  <script src="main.js"></script>
+</body>
+
+<footer>© by Nova Team</footer>
+
+</html>

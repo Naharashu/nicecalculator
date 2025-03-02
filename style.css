@@ -1,0 +1,53 @@
+body {
+  display: flexbox;
+  font-family: 'Segoe UI', Tahoma;
+}
+.btns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0px
+}
+button {
+  padding: 15px;
+  text-align: center;
+  background-color: #FFFFFF;
+  color: black;
+  border-color: #000000;
+  border-radius: 5px;
+  margin: 2px;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #C4C2BC;
+}
+.zero {
+  grid-column: span 2;
+}
+.cal {
+  width: 100%;
+  background-color: lightskyblue;
+}
+.cal:hover {
+  background-color: deepskyblue;
+}
+input {
+  border-radius: 10px;
+  width: 300px;
+  height: 40px;
+  font-size: 24px;
+}
+
+footer {
+  background-color: #42445A;
+  color: white;
+  text-align: center;
+  height: 60px;
+  align-content: center;
+  font-weight: bolder;
+}
+.addond {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px
+  color: #696B7D;
+}
