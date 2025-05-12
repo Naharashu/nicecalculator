@@ -39,6 +39,7 @@ input {
 
 footer {
   background-color: #42445A;
+  width: 100%;
   color: white;
   text-align: center;
   height: 60px;
@@ -46,8 +47,28 @@ footer {
   font-weight: bolder;
 }
 .addond {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2px
   color: #696B7D;
+}
+
+nav {
+  background-color: #42445A;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+}
+nav li {
+  
+}
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  width: 100%;
+}
+nav li a:hover {
+  background-color: #AFB5EE;
 }

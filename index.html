@@ -8,12 +8,18 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+<nav>
+  <ul>
+    <li><a href="/index.html">Standard Mode</a></li>
+    <li><a href="/expert.html">Expert Mode(WIP)</a></li>
+  </ul>
+</nav>
 
 <body>
-  <h3>Simple Calculator - Version 1.2(03.2025)</h3>
+  <h3>Simple Calculator - Version 1.3.2(05.2025)</h3>
   <input id="display" type="text" placeholder="0">
   <div class="btns">
-    <button onclick="del()" id="C">C</button>
+    <button onclick="del()" id="delC">C</button>
     <button id="one" onclick="addOne()">1</button>
     <button onclick="addTwo()" id="two">2</button>
     <button onclick="addThree()" id="three">3</button>
@@ -42,6 +48,8 @@
     <button onclick="addKub()" id="kub">x^3</button>
     <button onclick="addKvM()" id="kvM">x^y</button>
     <button onclick="addKvMi()" id="kvMi">1/x</button>
+    <button onclick="addE()">e</button>
+    <button onclick="addLog()">log</button>
   </div>
   
   <div class="geometry">
@@ -52,6 +60,12 @@
     <button onclick="addCos()" id="cos">cos</button>
     <button onclick="addTan()" id="tan">tan</button>
     <button onclick="addCot()" id="cot">cot</button>
+    <button onclick="addAsin()">asin</button>
+    <button onclick="addAcos()">acos</button>
+    <button onclick="addAtan()">atan</button>
+    <button onclick="addSinH()" >sinh</button>
+    <button onclick="addCosH()">cosh</button>
+    <button onclick="addTanH()">tanh</button>
   </div>
   
 <button onclick="calcul()" class="cal">Calculate</button>  
