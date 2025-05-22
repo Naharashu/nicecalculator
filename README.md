@@ -6,4 +6,4 @@ Nice calculator - is calculator website with more functionality than standard th
 
 site link - https://naharashu.github.io/nicecalculator
 
-Current version - 1.2
+Current version - 1.3.1
