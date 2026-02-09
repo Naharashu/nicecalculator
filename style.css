@@ -46,6 +46,8 @@ footer {
   align-content: center;
   font-weight: bolder;
   bottom: 0;
+  left: 0;
+  position: fixed;
 }
 .addond {
   color: #696B7D;
