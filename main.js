@@ -23,6 +23,14 @@ function tanh(a) {
   return Math.tanh(a)
 }
 
+function factor(x) {
+  let res = 1;
+  for(let i=2;i<=x;i++) {
+    res *= i;
+  }
+  return res;
+}
+
 function addOne() {
   input.value += '1'
 }
@@ -96,6 +104,9 @@ function calcul() {
     if(x.includes("cos(") && !(x.includes("arccos")) && !(x.includes("cosh"))) {
       x = x.replace(/cos\(/g, 'Math.cos(');
     }
+    if(x.includes("!(") {
+      x = x.replace(/!\(/g, 'factor(');
+    }
     if(x.includes("tan(") && !(x.includes("arctan")) && !(x.includes("tanh"))) {
       x = x.replace(/tan\(/g, 'Math.tan(');
     }
@@ -137,7 +148,7 @@ function addDot() {
   input.value += '.'
 }
 function addPi() {
-  input.value += '3.14'
+  input.value += '3.14159265'
 }
 
 function addKor2() {
@@ -210,6 +221,10 @@ function addE() {
 
 function addLog() {
   input.value += 'log('
+}
+
+function addFact() {
+  input.value += "!("
 }
 
 
